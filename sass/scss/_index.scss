@@ -1,0 +1,94 @@
+.indexMain {
+    background-image: url(../../img/publico.jpg);
+    height: 75vh;
+    width: 100%;
+    background-position: center center;
+    align-content: center;
+    margin: auto;
+    
+    ul{
+        max-width: $ancho*1.5;
+        display: flex;
+        font-size: 0;
+        margin: auto;
+        opacity: 80%;
+        list-style-type: none;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0px;
+
+        li{
+            width: $ancho/2;
+            height: 100px;
+            padding: 50px;
+            justify-content: space-evenly;
+            margin: 20px;
+            border-radius: 5px;
+            font-size: 22px;
+            background-image: linear-gradient(#333334, black) ;
+            text-decoration: overline;
+            border: solid 2px #999192;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-sizing: initial;
+            
+            
+            ul{
+                max-width: $ancho*1.25;
+                position: absolute;
+                display: none;
+                opacity: 100%;
+                
+                li{
+                    display: flex;
+                    width: 100px;
+                    height: 50px;
+                    padding: 50px;
+                    margin: 3px;
+                    align-content: center;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.indexMain li:hover ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*smartphone*/
+@media (max-width: 480px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+    }
+    
+    .indexMain nav{
+        margin: 10px 0px;
+        
+        li{
+            width: 250px;
+            height: 30px;
+            margin: 5px;
+            padding: 40px 20px;
+            font-size: 16px;
+            
+            ul{
+                width: 300px;
+                
+                li{
+                    width: 100px;
+                    height: 50px;
+                    padding: 20px;
+                    margin: 3px;
+                }
+            }
+        }
+    }
+}
+    .indexMain li:hover ul{
+        display: flex;
+    }

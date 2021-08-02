@@ -1,0 +1,37 @@
+
+.menu {
+    background-color: black;
+    list-style: none;
+    max-width: 900px;
+    display: flex;
+    align-content: center;
+    margin: auto;
+    justify-content: space-evenly;
+    
+    li {
+        display: inline-block;
+        position:relative;
+        font-size: 18pt;
+        text-transform: uppercase;
+    }
+}
+.sub-menu {
+    position: absolute;
+    display: none;
+    
+    li {
+        text-align: center;
+        background-color: black;
+        display: block;
+        font-size: 16pt;
+        text-transform: uppercase;
+    }
+}
+.menu li:hover ul {
+    display:block;
+}
+@media (max-width: 480px) {
+    .menu{
+        display: inline-block;
+    }
+}

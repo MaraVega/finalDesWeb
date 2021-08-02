@@ -1,0 +1,31 @@
+$ancho: 600px;
+
+#contactoMain {
+    background-image: url(../../img/publico.jpg);
+    height: 75vh;
+    width: 100%;
+    background-position: center center;
+    align-content: center;
+    margin: auto;
+    padding: auto;
+    
+    fieldset{
+        max-width: $ancho;
+        background-color: #333334;
+        opacity: 70%;
+        color: #999192;
+        border-radius: 4px;
+        font-weight: bold;
+        margin: auto;
+        padding: 20px;
+        
+        .contacto{
+            padding: 2px;
+        }
+    }
+    @media (max-width: 480px) {
+        fieldset{
+            max-width: $ancho/2;
+        }
+    }
+}

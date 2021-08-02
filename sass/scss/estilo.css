@@ -1,0 +1,525 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header, h1, h2, h3 {
+  font-family: "Aldrich", sans-serif;
+  color: #cc0000;
+  text-shadow: 1px 1px 1px whitesmoke;
+}
+
+h1 {
+  font-size: 28pt;
+}
+
+h2 {
+  font-size: 26pt;
+}
+
+h3 {
+  font-size: 24pt;
+}
+
+p, a {
+  font-family: "Exo 2", sans-serif;
+}
+
+li, a {
+  text-decoration: none;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 25px;
+  margin: 10px;
+}
+
+h2, h3 {
+  padding: 15px;
+}
+
+fieldset {
+  border: none;
+}
+
+li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+iframe {
+  padding: auto;
+}
+
+table {
+  text-align: center;
+}
+
+th {
+  color: #0000b3;
+}
+
+a {
+  text-decoration: none;
+  color: #999192;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+
+label, input, option {
+  font-family: "Exo 2", sans-serif;
+}
+
+/*estilos de artistas*/
+.nuestrosArtistas {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nuestrosArtistas nav {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.nuestrosArtistas .nuestrosArtistas-img {
+  max-width: 1000px;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nuestrosArtistas .nuestrosArtistas-img li:hover {
+  -webkit-transform: scale(1.4, 1.4);
+          transform: scale(1.4, 1.4);
+}
+
+.nosotros p {
+  margin: 20px;
+}
+
+.artistas {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.artistas h3 {
+  padding: 20px auto;
+}
+
+.artistas .artistas-bio {
+  padding: 0px 50px 10px;
+}
+
+@media (max-width: 480px) {
+  #demian {
+    background-image: url(../../img/demian.jpg);
+    background-position: center center;
+  }
+  #ivo {
+    background-image: url(../../img/ivo.jpg);
+    background-position: center center;
+  }
+  #geronzi {
+    background-image: url(../../img/geronzi.jpg);
+    background-position: center center;
+  }
+  #maag {
+    background-image: url(../../img/maag.jpg);
+    background-position: center center;
+  }
+  #mefistofeles {
+    background-image: url(../../img/mefistofeles.jpg);
+    background-position: center center;
+  }
+  #ukrenek {
+    background-image: url(../../img/ukrenek.jpg);
+    background-position: center center;
+  }
+  .artistas {
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 20px;
+  }
+  .artistas img {
+    display: none;
+  }
+  .nuestrosArtistas-img {
+    max-width: 100%;
+  }
+  .nuestrosArtistas-img li {
+    width: 150px;
+  }
+  .nuestrosArtistas-img img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.menu {
+  background-color: black;
+  list-style: none;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+}
+
+.sub-menu li {
+  text-align: center;
+  background-color: black;
+  display: block;
+  font-size: 16pt;
+  text-transform: uppercase;
+}
+
+.menu li:hover ul {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    display: inline-block;
+  }
+}
+
+/*estilos del footer*/
+.footer {
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+}
+
+.footer .footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .footer-nav ul img {
+  width: 50%;
+  height: 50%;
+}
+
+#contactoMain {
+  background-image: url(../../img/publico.jpg);
+  height: 75vh;
+  width: 100%;
+  background-position: center center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  padding: auto;
+}
+
+#contactoMain fieldset {
+  max-width: 600px;
+  background-color: #333334;
+  opacity: 70%;
+  color: #999192;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: auto;
+  padding: 20px;
+}
+
+#contactoMain fieldset .contacto {
+  padding: 2px;
+}
+
+@media (max-width: 480px) {
+  #contactoMain fieldset {
+    max-width: 300px;
+  }
+}
+
+.indexMain {
+  background-image: url(../../img/publico.jpg);
+  height: 75vh;
+  width: 100%;
+  background-position: center center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+}
+
+.indexMain ul {
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  margin: auto;
+  opacity: 80%;
+  list-style-type: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0px;
+}
+
+.indexMain ul li {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 20px;
+  border-radius: 5px;
+  font-size: 22px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333334), to(black));
+  background-image: linear-gradient(#333334, black);
+  text-decoration: overline;
+  border: solid 2px #999192;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
+}
+
+.indexMain ul li ul {
+  max-width: 750px;
+  position: absolute;
+  display: none;
+  opacity: 100%;
+}
+
+.indexMain ul li ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  padding: 50px;
+  margin: 3px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 16px;
+}
+
+.indexMain li:hover ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*smartphone*/
+@media (max-width: 480px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .indexMain nav {
+    margin: 10px 0px;
+  }
+  .indexMain nav li {
+    width: 250px;
+    height: 30px;
+    margin: 5px;
+    padding: 40px 20px;
+    font-size: 16px;
+  }
+  .indexMain nav li ul {
+    width: 300px;
+  }
+  .indexMain nav li ul li {
+    width: 100px;
+    height: 50px;
+    padding: 20px;
+    margin: 3px;
+  }
+}
+
+.indexMain li:hover ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuEventos, .menuMusica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 0;
+  height: 50vh;
+  margin: auto;
+  list-style-type: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: auto;
+}
+
+.menuEventos ul, .menuMusica ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuEventos ul li, .menuMusica ul li {
+  width: 200px;
+  height: 100px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 20px;
+  padding: 75px;
+  border-radius: 5px;
+  font-size: 26px;
+  font-family: 'Aldrich', sans-serif;
+  background-color: #333334;
+  text-decoration: overline;
+  border: solid 2px #999192;
+  font-weight: bold;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
+}
+
+.menuEventos ul li:hover, .menuMusica ul li:hover {
+  -webkit-animation-name: eventos;
+          animation-name: eventos;
+  -webkit-animation: eventos 5s ease-in 0s infinite;
+          animation: eventos 5s ease-in 0s infinite;
+  text-shadow: 0.2px 0.2px 0.2px whitesmoke;
+}
+
+@-webkit-keyframes eventos {
+  0% {
+    background-image: url(../../img/1.jpg);
+    background-position: center center;
+  }
+  20% {
+    background-image: url(../../img/2.jpg);
+    background-position: center center;
+  }
+  40% {
+    background-image: url(../../img/3.jpg);
+    background-position: center center;
+  }
+  60% {
+    background-image: url(../../img/4.jpg);
+    background-position: center center;
+  }
+  80% {
+    background-image: url(../../img/5.jpg);
+    background-position: center center;
+  }
+  100% {
+    background-image: url(../../img/6.jpg);
+    background-position: center center;
+  }
+}
+
+@keyframes eventos {
+  0% {
+    background-image: url(../../img/1.jpg);
+    background-position: center center;
+  }
+  20% {
+    background-image: url(../../img/2.jpg);
+    background-position: center center;
+  }
+  40% {
+    background-image: url(../../img/3.jpg);
+    background-position: center center;
+  }
+  60% {
+    background-image: url(../../img/4.jpg);
+    background-position: center center;
+  }
+  80% {
+    background-image: url(../../img/5.jpg);
+    background-position: center center;
+  }
+  100% {
+    background-image: url(../../img/6.jpg);
+    background-position: center center;
+  }
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=estilo.css.map */

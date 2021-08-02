@@ -1,0 +1,14 @@
+.artistas {
+  align-content: center;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  color: #F44336;
+}

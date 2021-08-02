@@ -1,0 +1,51 @@
+.menuEventos, .menuMusica {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    height: 50vh;
+    margin: auto;
+    list-style-type: none;
+    align-content: center;
+    justify-content: center;
+    padding: auto;
+
+    ul{
+        display: flex;
+
+        li {
+            width: 200px;
+            height: 100px;
+            justify-content: space-evenly;
+            margin: 20px;
+            padding: 75px;
+            border-radius: 5px;
+            font-size: 26px;
+            font-family: 'Aldrich', sans-serif;
+            background-color: #333334;
+            text-decoration: overline;
+            border: solid 2px #999192;
+            font-weight: bold;
+            align-content: center;
+            box-sizing: initial;
+        }
+        li:hover{
+            animation-name: eventos;
+            animation: eventos 5s ease-in 0s infinite;
+            text-shadow: 0.2px 0.2px 0.2px whitesmoke;
+        }
+    }
+}
+@keyframes eventos{
+    0%{background-image: url(../../img/1.jpg);
+        background-position: center center;}
+    20%{background-image: url(../../img/2.jpg);
+        background-position: center center;}
+    40%{background-image: url(../../img/3.jpg);
+        background-position: center center;}
+    60%{background-image: url(../../img/4.jpg);
+        background-position: center center;}
+    80%{background-image: url(../../img/5.jpg);
+        background-position: center center;}
+    100%{background-image: url(../../img/6.jpg);
+        background-position: center center;}
+}

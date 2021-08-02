@@ -1,0 +1,69 @@
+$titulo: 'Aldrich', sans-serif;
+$texto: 'Exo 2', sans-serif;
+$colorTitulo: #cc0000;
+
+
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header, h1, h2, h3{
+    font-family: $titulo;
+    color: $colorTitulo;
+    text-shadow: 1px 1px 1px whitesmoke;
+}
+
+@for $i from 1 through 3 {
+    h#{$i} { font-size: 30pt-(2pt*$i); }
+}
+
+p, a{
+    font-family: $texto;
+}
+li, a{
+    text-decoration: none;
+}
+header {
+    position: sticky;
+    top: 0px;
+    align-content: center;
+    align-items: center;
+}
+h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+}
+h2, h3 {
+    padding: 15px;
+}
+fieldset{
+    border: none;
+}
+li{
+    list-style-type: none;
+    text-transform: capitalize;
+}
+iframe{
+    padding: auto;
+}
+table {
+    text-align: center;
+}
+th {
+    color: #0000b3;
+}
+a {
+    text-decoration: none;
+    color: #999192;
+    justify-content: space-evenly;
+}
+a:hover{
+    color: whitesmoke;
+}
+label, input, option {
+    font-family: $texto;
+}

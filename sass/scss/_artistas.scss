@@ -1,0 +1,67 @@
+/*estilos de artistas*/
+.nuestrosArtistas {
+    align-items: center;
+    justify-content: center;
+    
+    nav{
+        align-content: center;
+    }
+    .nuestrosArtistas-img {
+        max-width: 1000px;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nuestrosArtistas-img li:hover {
+        transform: scale(1.4, 1.4);
+    }
+}
+
+.nosotros p {
+    margin: 20px;
+}
+
+
+
+.artistas {
+    align-content: center;
+    text-align: center;
+
+    h3{
+        padding: 20px auto;
+    }
+    .artistas-bio{
+        padding: 0px 50px 10px;
+    }
+}
+@media (max-width: 480px){
+    @each $artistasImg in demian, ivo, geronzi, maag, mefistofeles, ukrenek {
+        ##{$artistasImg} {
+            background-image: url(../../img/#{$artistasImg}.jpg);
+            background-position: center center;
+        }
+    }
+    .artistas{
+        text-align: center;
+        align-content: center;
+        margin: 20px;
+    }
+
+    .artistas img{
+        display: none;
+    }
+    .nuestrosArtistas-img{
+        max-width: 100%;
+
+        li{
+            width: 150px;
+        }
+        img{
+            width: 50%;
+            height: 50%;
+        }
+        
+    } 
+}
