@@ -126,19 +126,32 @@ label, input, option {
       width: 50%;
       height: 50%; } }
 
+header {
+  align-content: center;
+  margin: auto; }
+  header label {
+    display: none;
+    width: 30px;
+    height: 30px; }
+    header label:hover {
+      cursor: pointer; }
+
+#btn-menu {
+  display: none; }
+
 .menu {
   background-color: black;
   list-style: none;
-  max-width: 900px;
   display: flex;
   align-content: center;
   margin: auto;
   justify-content: space-evenly; }
   .menu li {
-    display: inline-block;
+    flex-direction: row;
     position: relative;
     font-size: 18pt;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    flex-grow: 1; }
 
 .sub-menu {
   position: absolute;
@@ -157,6 +170,22 @@ label, input, option {
   .menu {
     display: inline-block; } }
 
+@media (max-width: 800px) {
+  header label {
+    display: block; }
+  header .menu {
+    display: none;
+    position: absolute;
+    width: 70%;
+    margin-left: 70%;
+    flex-direction: column;
+    transition: all 0.5s; }
+    header .menu li {
+      border-top: grey; }
+  header #btn-menu:checked + .menu {
+    margin: 0;
+    display: block; } }
+
 /*estilos del footer*/
 .footer {
   height: 10vh;
@@ -171,9 +200,6 @@ label, input, option {
     list-style-type: none;
     align-items: center;
     justify-content: space-evenly; }
-    .footer .footer-nav ul img {
-      width: 50%;
-      height: 50%; }
 
 #contactoMain {
   background-image: url(../../img/publico.jpg);
@@ -324,6 +350,11 @@ label, input, option {
   100% {
     background-image: url(../../img/6.jpg);
     background-position: center center; } }
+
+@media (max-width: 800px) {
+  .menuEventos, .menuMusica {
+    display: flex;
+    flex-direction: column; } }
 
 * {
   padding: 0%;

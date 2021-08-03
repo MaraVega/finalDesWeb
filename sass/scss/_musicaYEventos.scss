@@ -49,3 +49,9 @@
     100%{background-image: url(../../img/6.jpg);
         background-position: center center;}
 }
+@media (max-width: 800px){
+    .menuEventos, .menuMusica {
+        display: flex;
+        flex-direction: column;
+    }
+}
