@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     font-size: 0;
-    height: 50vh;
+    height: 80vh;
     margin: auto;
     list-style-type: none;
     align-content: center;
@@ -13,17 +13,16 @@
         display: flex;
 
         li {
-            width: 200px;
-            height: 100px;
-            justify-content: space-evenly;
+            width: 350px;
+            height: 250px;
+            justify-content: center;
+            align-content: center;
             margin: 20px;
-            padding: 75px;
-            border-radius: 5px;
+            border-radius: 1px;
             font-size: 26px;
-            font-family: 'Aldrich', sans-serif;
-            background-color: #333334;
-            text-decoration: overline;
-            border: solid 2px #999192;
+            font-family: $titulo;
+            text-transform: uppercase;
+            border: solid 1px #999192;
             font-weight: bold;
             align-content: center;
             box-sizing: initial;
@@ -35,6 +34,21 @@
         }
     }
 }
+.galeria{
+    align-content: center;
+    justify-content: space-evenly;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    li{
+        margin: 5px;
+    }
+}
+.galeria-480{
+        display: none;
+}
+
 @keyframes eventos{
     0%{background-image: url(../../img/1.jpg);
         background-position: center center;}
@@ -49,9 +63,108 @@
     100%{background-image: url(../../img/6.jpg);
         background-position: center center;}
 }
+.seccionCalendario{
+    height: 100vh;
+
+    .calendario{
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        
+        li{
+            border: solid 1px #333334;
+            text-align: end;
+            padding: 10px 5px 30px;
+            font-family: $texto;
+            font-size: large;
+            
+        }
+        .dia{
+            font-family: $titulo;
+            color: $colorTitulo;
+            font-size: larger;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        .evento{
+            background: #333334;
+        }
+    }
+    p{
+        margin: 20px 10px;
+    }
+}
+.tracks, .sets{
+
+    .videos{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 90%;
+        margin: auto;
+        justify-content: space-evenly;
+
+        iframe{
+            width: 560px;
+            height: 315px;
+            margin: 10px;
+        }
+    }
+}
+
+//width="280" height="167"
+
 @media (max-width: 800px){
     .menuEventos, .menuMusica {
+        display: none;
+    }
+    .seccionCalendario{
+        height: 85vh;
+}
+}
+@media (max-width: 480px){
+    .galeria{
+        display: none;
+    }
+    .galeria-480{
+        align-content: center;
+        justify-content: space-evenly;
+        margin: auto;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        
+        li{
+            margin: 5px;
+        }
+    }
+    .seccionCalendario{
+        height: 80vh;
+        
+        .calendario{
+            width: 95%;
+            li{
+                font-size: 12pt;
+                text-align: center;
+                padding: 5px 5px 5px;
+            }
+            .dia{
+                font-size: 12pt;
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+    .tracks, .sets{
+
+        .videos{
+            max-width: 95%;
+            
+            iframe{
+                width: 280px;
+                height: 167px;
+            }
+        }
     }
 }

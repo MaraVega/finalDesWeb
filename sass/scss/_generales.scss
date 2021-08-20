@@ -13,6 +13,9 @@ header, h1, h2, h3{
     color: $colorTitulo;
     text-shadow: 1px 1px 1px whitesmoke;
 }
+i{
+    color: white;
+}
 
 @for $i from 1 through 3 {
     h#{$i} { font-size: 30pt-(2pt*$i); }
@@ -49,12 +52,6 @@ li{
 }
 iframe{
     padding: auto;
-}
-table {
-    text-align: center;
-}
-th {
-    color: #0000b3;
 }
 a {
     text-decoration: none;

@@ -1,0 +1,99 @@
+/*estilos de artistas*/
+.nuestrosArtistas {
+  align-items: center;
+  justify-content: center;
+}
+.nuestrosArtistas nav {
+  align-content: center;
+}
+.nuestrosArtistas .nuestrosArtistas-img {
+  max-width: 900px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nuestrosArtistas .nuestrosArtistas-img li {
+  margin: 5px;
+}
+.nuestrosArtistas .nuestrosArtistas-img li:hover {
+  transform: scale(1.4, 1.4);
+}
+
+.nuestrosArtistas-img-480 {
+  display: none;
+}
+
+.nosotros p {
+  margin: 20px;
+}
+
+.artistas {
+  align-content: center;
+  text-align: center;
+}
+.artistas h3 {
+  padding: 20px auto;
+}
+.artistas .artistas-bio {
+  padding: 0px 50px 10px;
+}
+
+@media (max-width: 480px) {
+  #demian {
+    background-image: url(../../img/demian1.jpg);
+    background-position: center;
+  }
+
+  #ivo {
+    background-image: url(../../img/ivo1.jpg);
+    background-position: center;
+  }
+
+  #geronzi {
+    background-image: url(../../img/geronzi1.jpg);
+    background-position: center;
+  }
+
+  #maag {
+    background-image: url(../../img/maag1.jpg);
+    background-position: center;
+  }
+
+  #mefistofeles {
+    background-image: url(../../img/mefistofeles1.jpg);
+    background-position: center;
+  }
+
+  #ukrenek {
+    background-image: url(../../img/ukrenek1.jpg);
+    background-position: center;
+  }
+
+  .artistas {
+    text-align: center;
+    align-content: center;
+    margin: 20px;
+    height: 100vh;
+  }
+  .artistas img {
+    display: none;
+  }
+
+  .nuestrosArtistas-img {
+    display: none;
+  }
+  .nuestrosArtistas-img li {
+    display: none;
+  }
+
+  .nuestrosArtistas-img-480 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nuestrosArtistas-img-480 li {
+    margin: 5px;
+  }
+}

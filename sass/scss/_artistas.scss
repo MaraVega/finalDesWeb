@@ -7,16 +7,23 @@
         align-content: center;
     }
     .nuestrosArtistas-img {
-        max-width: 1000px;
+        max-width: 900px;
         margin: auto;
         align-items: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        li{
+            margin: 5px;
+        }
     }
     .nuestrosArtistas-img li:hover {
         transform: scale(1.4, 1.4);
     }
+}
+.nuestrosArtistas-img-480{
+    display: none;
 }
 
 .nosotros p {
@@ -39,29 +46,35 @@
 @media (max-width: 480px){
     @each $artistasImg in demian, ivo, geronzi, maag, mefistofeles, ukrenek {
         ##{$artistasImg} {
-            background-image: url(../../img/#{$artistasImg}.jpg);
-            background-position: center center;
+            background-image: url(../../img/#{$artistasImg}1.jpg);
+            background-position: center;
         }
     }
     .artistas{
         text-align: center;
         align-content: center;
         margin: 20px;
-    }
-
-    .artistas img{
-        display: none;
-    }
-    .nuestrosArtistas-img{
-        max-width: 100%;
-
-        li{
-            width: 150px;
-        }
-        img{
-            width: 50%;
-            height: 50%;
-        }
+        height: 100vh;
         
+        img{
+            display: none;
+        }
+    }
+
+    .nuestrosArtistas-img{
+        display: none;
+        
+        li{
+            display: none;
+        }
     } 
+    .nuestrosArtistas-img-480{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        li{
+            margin: 5px;
+        }
+    }
 }

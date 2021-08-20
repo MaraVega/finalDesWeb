@@ -24,18 +24,28 @@ header{
     justify-content: space-evenly;
     
     li {
+        margin: 3px;
+        font-family: $titulo;
         flex-direction: row;
         position:relative;
         font-size: 18pt;
         text-transform: uppercase;
         flex-grow: 1;
+        
+        &:hover{
+            transform: scale(1.05, 1.05);
+            border: solid 1px #999192;
+            box-shadow: 1px 1px 1px whitesmoke;
+        }
     }
 }
 .sub-menu {
     position: absolute;
     display: none;
-    
+    align-content: center;
     li {
+        width: 20vw;
+        font-family: $titulo;
         text-align: center;
         background-color: black;
         display: block;
@@ -72,7 +82,6 @@ header{
                 margin: 0;
                 display: block;
             }
-
         }
     }
 }

@@ -8,6 +8,9 @@ header, h1, h2, h3 {
   color: #cc0000;
   text-shadow: 1px 1px 1px whitesmoke; }
 
+i {
+  color: white; }
+
 h1 {
   font-size: 28pt; }
 
@@ -49,12 +52,6 @@ li {
 iframe {
   padding: auto; }
 
-table {
-  text-align: center; }
-
-th {
-  color: #0000b3; }
-
 a {
   text-decoration: none;
   color: #999192;
@@ -73,14 +70,19 @@ label, input, option {
   .nuestrosArtistas nav {
     align-content: center; }
   .nuestrosArtistas .nuestrosArtistas-img {
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+    .nuestrosArtistas .nuestrosArtistas-img li {
+      margin: 5px; }
   .nuestrosArtistas .nuestrosArtistas-img li:hover {
     transform: scale(1.4, 1.4); }
+
+.nuestrosArtistas-img-480 {
+  display: none; }
 
 .nosotros p {
   margin: 20px; }
@@ -95,36 +97,40 @@ label, input, option {
 
 @media (max-width: 480px) {
   #demian {
-    background-image: url(../../img/demian.jpg);
-    background-position: center center; }
+    background-image: url(../../img/demian1.jpg);
+    background-position: center; }
   #ivo {
-    background-image: url(../../img/ivo.jpg);
-    background-position: center center; }
+    background-image: url(../../img/ivo1.jpg);
+    background-position: center; }
   #geronzi {
-    background-image: url(../../img/geronzi.jpg);
-    background-position: center center; }
+    background-image: url(../../img/geronzi1.jpg);
+    background-position: center; }
   #maag {
-    background-image: url(../../img/maag.jpg);
-    background-position: center center; }
+    background-image: url(../../img/maag1.jpg);
+    background-position: center; }
   #mefistofeles {
-    background-image: url(../../img/mefistofeles.jpg);
-    background-position: center center; }
+    background-image: url(../../img/mefistofeles1.jpg);
+    background-position: center; }
   #ukrenek {
-    background-image: url(../../img/ukrenek.jpg);
-    background-position: center center; }
+    background-image: url(../../img/ukrenek1.jpg);
+    background-position: center; }
   .artistas {
     text-align: center;
     align-content: center;
-    margin: 20px; }
-  .artistas img {
-    display: none; }
+    margin: 20px;
+    height: 100vh; }
+    .artistas img {
+      display: none; }
   .nuestrosArtistas-img {
-    max-width: 100%; }
+    display: none; }
     .nuestrosArtistas-img li {
-      width: 150px; }
-    .nuestrosArtistas-img img {
-      width: 50%;
-      height: 50%; } }
+      display: none; }
+  .nuestrosArtistas-img-480 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .nuestrosArtistas-img-480 li {
+      margin: 5px; } }
 
 header {
   align-content: center;
@@ -147,16 +153,25 @@ header {
   margin: auto;
   justify-content: space-evenly; }
   .menu li {
+    margin: 3px;
+    font-family: "Aldrich", sans-serif;
     flex-direction: row;
     position: relative;
     font-size: 18pt;
     text-transform: uppercase;
     flex-grow: 1; }
+    .menu li:hover {
+      transform: scale(1.05, 1.05);
+      border: solid 1px #999192;
+      box-shadow: 1px 1px 1px whitesmoke; }
 
 .sub-menu {
   position: absolute;
-  display: none; }
+  display: none;
+  align-content: center; }
   .sub-menu li {
+    width: 20vw;
+    font-family: "Aldrich", sans-serif;
     text-align: center;
     background-color: black;
     display: block;
@@ -303,7 +318,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   font-size: 0;
-  height: 50vh;
+  height: 80vh;
   margin: auto;
   list-style-type: none;
   align-content: center;
@@ -312,17 +327,16 @@ header {
   .menuEventos ul, .menuMusica ul {
     display: flex; }
     .menuEventos ul li, .menuMusica ul li {
-      width: 200px;
-      height: 100px;
-      justify-content: space-evenly;
+      width: 350px;
+      height: 250px;
+      justify-content: center;
+      align-content: center;
       margin: 20px;
-      padding: 75px;
-      border-radius: 5px;
+      border-radius: 1px;
       font-size: 26px;
-      font-family: 'Aldrich', sans-serif;
-      background-color: #333334;
-      text-decoration: overline;
-      border: solid 2px #999192;
+      font-family: "Aldrich", sans-serif;
+      text-transform: uppercase;
+      border: solid 1px #999192;
       font-weight: bold;
       align-content: center;
       box-sizing: initial; }
@@ -330,6 +344,18 @@ header {
       animation-name: eventos;
       animation: eventos 5s ease-in 0s infinite;
       text-shadow: 0.2px 0.2px 0.2px whitesmoke; }
+
+.galeria {
+  align-content: center;
+  justify-content: space-evenly;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .galeria li {
+    margin: 5px; }
+
+.galeria-480 {
+  display: none; }
 
 @keyframes eventos {
   0% {
@@ -351,10 +377,75 @@ header {
     background-image: url(../../img/6.jpg);
     background-position: center center; } }
 
+.seccionCalendario {
+  height: 100vh; }
+  .seccionCalendario .calendario {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); }
+    .seccionCalendario .calendario li {
+      border: solid 1px #333334;
+      text-align: end;
+      padding: 10px 5px 30px;
+      font-family: "Exo 2", sans-serif;
+      font-size: large; }
+    .seccionCalendario .calendario .dia {
+      font-family: "Aldrich", sans-serif;
+      color: #cc0000;
+      font-size: larger;
+      font-weight: bold;
+      text-align: center; }
+    .seccionCalendario .calendario .evento {
+      background: #333334; }
+  .seccionCalendario p {
+    margin: 20px 10px; }
+
+.tracks .videos, .sets .videos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: auto;
+  justify-content: space-evenly; }
+  .tracks .videos iframe, .sets .videos iframe {
+    width: 560px;
+    height: 315px;
+    margin: 10px; }
+
 @media (max-width: 800px) {
   .menuEventos, .menuMusica {
+    display: none; }
+  .seccionCalendario {
+    height: 85vh; } }
+
+@media (max-width: 480px) {
+  .galeria {
+    display: none; }
+  .galeria-480 {
+    align-content: center;
+    justify-content: space-evenly;
+    margin: auto;
     display: flex;
-    flex-direction: column; } }
+    flex-wrap: wrap; }
+    .galeria-480 li {
+      margin: 5px; }
+  .seccionCalendario {
+    height: 80vh; }
+    .seccionCalendario .calendario {
+      width: 95%; }
+      .seccionCalendario .calendario li {
+        font-size: 12pt;
+        text-align: center;
+        padding: 5px 5px 5px; }
+      .seccionCalendario .calendario .dia {
+        font-size: 12pt; }
+        .seccionCalendario .calendario .dia span {
+          display: none; }
+  .tracks .videos, .sets .videos {
+    max-width: 95%; }
+    .tracks .videos iframe, .sets .videos iframe {
+      width: 280px;
+      height: 167px; } }
 
 * {
   padding: 0%;
