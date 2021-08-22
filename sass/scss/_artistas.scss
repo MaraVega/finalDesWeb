@@ -55,11 +55,33 @@
         }
     }
     .artistas{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         text-align: center;
         align-content: center;
         margin: 20px;
         height: 100vh;
-        
+        padding: 5vh 0px;
+
+        h3{
+            display: flex;
+            align-content: center;
+            margin: auto;
+        }
+        .artistas-bio{
+            padding: 20px 10px;
+
+            p{
+                margin-top: 20px;
+            }
+            .redesSociales-artistas{
+                margin-top: 20px;
+                a{
+                    margin: 10px 20px;
+                }
+            }
+        }
         img{
             display: none;
         }
