@@ -94,6 +94,9 @@ label, input, option {
     padding: 20px auto; }
   .artistas .artistas-bio {
     padding: 0px 50px 10px; }
+    .artistas .artistas-bio .redesSociales-artistas {
+      justify-content: space-evenly;
+      margin: auto; }
 
 @media (max-width: 480px) {
   #demian {
@@ -264,9 +267,12 @@ header {
     justify-content: center;
     padding-left: 0px; }
     .indexMain ul li {
-      width: 300px;
-      height: 100px;
-      padding: 50px;
+      font-family: "Aldrich", sans-serif;
+      display: flex;
+      width: 400px;
+      height: 200px;
+      align-items: center;
+      align-content: center;
       justify-content: space-evenly;
       margin: 20px;
       border-radius: 5px;
@@ -283,10 +289,11 @@ header {
         display: none;
         opacity: 100%; }
         .indexMain ul li ul li {
+          font-family: "Aldrich", sans-serif;
           display: flex;
-          width: 100px;
-          height: 50px;
-          padding: 50px;
+          width: 200px;
+          height: 150px;
+          align-items: center;
           margin: 3px;
           align-content: center;
           font-size: 16px; }
@@ -301,21 +308,25 @@ header {
     margin: 0%;
     padding: 0%;
     align-items: center; }
-  .indexMain nav {
-    margin: 10px 0px; }
-    .indexMain nav li {
-      width: 250px;
-      height: 30px;
-      margin: 5px;
-      padding: 40px 20px;
-      font-size: 16px; }
-      .indexMain nav li ul {
-        width: 300px; }
-        .indexMain nav li ul li {
-          width: 100px;
-          height: 50px;
-          padding: 20px;
-          margin: 3px; } }
+  .indexMain {
+    display: flex;
+    align-items: center; }
+    .indexMain nav {
+      margin: 10px 0px; }
+      .indexMain nav li {
+        display: flex;
+        width: 300px;
+        height: 90px;
+        margin: 5px;
+        align-items: center;
+        font-size: 16px; }
+        .indexMain nav li ul {
+          width: 300px; }
+          .indexMain nav li ul li {
+            width: 100px;
+            height: 50px;
+            padding: 20px;
+            margin: 3px; } }
 
 .indexMain li:hover ul {
   display: flex; }
@@ -333,19 +344,18 @@ header {
   .menuEventos ul, .menuMusica ul {
     display: flex; }
     .menuEventos ul li, .menuMusica ul li {
+      display: flex;
       width: 350px;
       height: 250px;
       justify-content: center;
-      align-content: center;
+      align-items: center;
       margin: 20px;
       border-radius: 1px;
       font-size: 26px;
       font-family: "Aldrich", sans-serif;
       text-transform: uppercase;
       border: solid 1px #999192;
-      font-weight: bold;
-      align-content: center;
-      box-sizing: initial; }
+      font-weight: bold; }
     .menuEventos ul li:hover, .menuMusica ul li:hover {
       animation-name: eventos;
       animation: eventos 5s ease-in 0s infinite;

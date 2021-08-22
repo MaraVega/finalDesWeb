@@ -11,12 +11,14 @@
 
     ul{
         display: flex;
+        
 
         li {
+            display: flex;
             width: 350px;
             height: 250px;
             justify-content: center;
-            align-content: center;
+            align-items: center;
             margin: 20px;
             border-radius: 1px;
             font-size: 26px;
@@ -24,8 +26,8 @@
             text-transform: uppercase;
             border: solid 1px #999192;
             font-weight: bold;
-            align-content: center;
-            box-sizing: initial;
+            
+            
         }
         li:hover{
             animation-name: eventos;

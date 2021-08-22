@@ -41,6 +41,10 @@
     }
     .artistas-bio{
         padding: 0px 50px 10px;
+        .redesSociales-artistas{
+            justify-content: space-evenly;
+            margin: auto;
+        }
     }
 }
 @media (max-width: 480px){
