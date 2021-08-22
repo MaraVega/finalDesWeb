@@ -65,7 +65,11 @@
     100%{background-image: url(../../img/6.jpg);
         background-position: center center;}
 }
+#ultimosEventos{
+    padding-top: 5vh;
+}
 .seccionCalendario{
+    padding-top: 5vh;
     height: 100vh;
 
     .calendario{
@@ -99,7 +103,7 @@
     }
 }
 .tracks, .sets{
-
+    padding-top: 5vh;
     .videos{
         display: flex;
         flex-wrap: wrap;

@@ -33,17 +33,31 @@
 
 
 .artistas {
+    padding-top: 10vh;
     align-content: center;
     text-align: center;
+    height: 100vh;
 
     h3{
+        
         padding: 20px auto;
     }
     .artistas-bio{
         padding: 0px 50px 10px;
+        p{
+            margin: 20px;
+        }
         .redesSociales-artistas{
             justify-content: space-evenly;
             margin: auto;
+            a{
+                margin: 20px;
+                
+                i:hover{
+                    color: $colorTitulo;
+                    transform: scale(1.2, 1.2);
+                }
+            }
         }
     }
 }

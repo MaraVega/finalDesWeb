@@ -9,6 +9,7 @@ header, h1, h2, h3 {
   text-shadow: 1px 1px 1px whitesmoke; }
 
 i {
+  font-size: 2 em;
   color: white; }
 
 h1 {
@@ -88,15 +89,24 @@ label, input, option {
   margin: 20px; }
 
 .artistas {
+  padding-top: 10vh;
   align-content: center;
-  text-align: center; }
+  text-align: center;
+  height: 100vh; }
   .artistas h3 {
     padding: 20px auto; }
   .artistas .artistas-bio {
     padding: 0px 50px 10px; }
+    .artistas .artistas-bio p {
+      margin: 20px; }
     .artistas .artistas-bio .redesSociales-artistas {
       justify-content: space-evenly;
       margin: auto; }
+      .artistas .artistas-bio .redesSociales-artistas a {
+        margin: 20px; }
+        .artistas .artistas-bio .redesSociales-artistas a i:hover {
+          color: #cc0000;
+          transform: scale(1.2, 1.2); }
 
 @media (max-width: 480px) {
   #demian {
@@ -258,11 +268,29 @@ header {
     font-weight: bold;
     margin: auto;
     padding: 20px; }
+    #contactoMain fieldset .textarea textarea {
+      width: 300px; }
+    #contactoMain fieldset .contacto-bt input {
+      width: 100px;
+      height: 25px; }
     #contactoMain fieldset .contacto {
       padding: 2px; }
+      #contactoMain fieldset .contacto select, #contactoMain fieldset .contacto input {
+        width: 300px; }
   @media (max-width: 480px) {
+    #contactoMain h1 {
+      font-size: 26px; }
     #contactoMain fieldset {
-      max-width: 300px; } }
+      max-width: 300px; }
+      #contactoMain fieldset .textarea textarea {
+        width: 200px; }
+      #contactoMain fieldset .contacto-bt input {
+        width: 75px;
+        height: 25px; }
+      #contactoMain fieldset .contacto {
+        padding: 2px; }
+        #contactoMain fieldset .contacto select, #contactoMain fieldset .contacto input {
+          width: 200px; } }
 
 .indexMain {
   background-image: url(../../img/publico.jpg);
@@ -405,7 +433,11 @@ header {
     background-image: url(../../img/6.jpg);
     background-position: center center; } }
 
+#ultimosEventos {
+  padding-top: 5vh; }
+
 .seccionCalendario {
+  padding-top: 5vh;
   height: 100vh; }
   .seccionCalendario .calendario {
     width: 85%;
@@ -429,16 +461,18 @@ header {
   .seccionCalendario p {
     margin: 20px 10px; }
 
-.tracks .videos, .sets .videos {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 90%;
-  margin: auto;
-  justify-content: space-evenly; }
-  .tracks .videos iframe, .sets .videos iframe {
-    width: 560px;
-    height: 315px;
-    margin: 10px; }
+.tracks, .sets {
+  padding-top: 5vh; }
+  .tracks .videos, .sets .videos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: auto;
+    justify-content: space-evenly; }
+    .tracks .videos iframe, .sets .videos iframe {
+      width: 560px;
+      height: 315px;
+      margin: 10px; }
 
 @media (max-width: 800px) {
   .menuEventos, .menuMusica {

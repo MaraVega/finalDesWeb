@@ -18,14 +18,50 @@
         font-weight: bold;
         margin: auto;
         padding: 20px;
-        
+
+        .textarea{
+            textarea{
+                width: $ancho/2;
+            }
+        }
+        .contacto-bt{
+            input{
+                width: 100px;
+                height: 25px;
+            }
+        }
         .contacto{
+            select, input{
+                width: $ancho/2;
+            }
             padding: 2px;
         }
+
     }
     @media (max-width: 480px) {
+        h1{
+            font-size: 26px;
+        }
         fieldset{
             max-width: $ancho/2;
+            
+        .textarea{
+            textarea{
+                width: $ancho/3;
+            }
+        }
+        .contacto-bt{
+            input{
+                width: 75px;
+                height: 25px;
+            }
+        }
+        .contacto{
+            select, input{
+                width: $ancho/3;
+            }
+            padding: 2px;
+        }
         }
     }
 }
