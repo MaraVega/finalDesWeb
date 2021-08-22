@@ -73,6 +73,7 @@
     .indexMain {
         display: flex;
         align-items: center;
+        
         nav{
             margin: 10px 0px;
             
@@ -85,13 +86,9 @@
                 font-size: 16px;
                 
                 ul{
-                    width: 300px;
-                    
+                    display: none;
                     li{
-                        width: 100px;
-                        height: 50px;
-                        padding: 20px;
-                        margin: 3px;
+                        display: none;
                     }
                 }
             }
