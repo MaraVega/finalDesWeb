@@ -196,6 +196,8 @@ header {
       background-color: black; }
       header nav .menu {
         display: inline-block; }
+        header nav .menu li:hover ul {
+          display: none; }
       header nav a {
         color: white; }
       header nav:target {

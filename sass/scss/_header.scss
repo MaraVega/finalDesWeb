@@ -74,6 +74,10 @@ header{
             background-color: black;
             .menu{
                 display: inline-block;
+
+                li:hover ul {
+                    display:none;
+                }
             }
             a{
                 color: white;
