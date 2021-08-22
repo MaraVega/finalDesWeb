@@ -2,40 +2,34 @@ header{
     align-content: center;
     margin: auto;
 
-    label{
+    .logo{
         display: none;
-        width: 30px;
-        height: 30px;
-
-        &:hover{
-            cursor: pointer;
-        }
     }
-}
-#btn-menu{
-    display: none;
-}
-.menu {
-    background-color: black;
-    list-style: none;
-    display: flex;
-    align-content: center;
-    margin: auto;
-    justify-content: space-evenly;
-    
-    li {
-        margin: 3px;
-        font-family: $titulo;
-        flex-direction: row;
-        position:relative;
-        font-size: 18pt;
-        text-transform: uppercase;
-        flex-grow: 1;
+    .menu-abrir, .menu-cerrar{
+        display: none;
+    }
+    .menu {
+        background-color: black;
+        list-style: none;
+        display: flex;
+        align-content: center;
+        margin: auto;
+        justify-content: space-evenly;
         
-        &:hover{
-            transform: scale(1.05, 1.05);
-            border: solid 1px #999192;
-            box-shadow: 1px 1px 1px whitesmoke;
+        li {
+            margin: 3px;
+            font-family: $titulo;
+            flex-direction: row;
+            position:relative;
+            font-size: 18pt;
+            text-transform: uppercase;
+            flex-grow: 1;
+            
+            &:hover{
+                transform: scale(1.05, 1.05);
+                border: solid 1px #999192;
+                box-shadow: 1px 1px 1px whitesmoke;
+            }
         }
     }
 }
@@ -56,32 +50,43 @@ header{
 .menu li:hover ul {
     display:block;
 }
+@media (max-width:800px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .logo{
+            display: block;
+        }
+        .menu-abrir, .menu-cerrar{
+            display: block;
+        }
+        nav{
+            position: absolute;
+            top: -1000%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+            .menu{
+                display: inline-block;
+            }
+            a{
+                color: white;
+            }
+            &:target{
+                top: 0%;
+            }
+        }
+        
+        
+    }
+}
+
 @media (max-width: 480px) {
     .menu{
         display:inline-block; 
-    }
-}
-@media (max-width:800px){
-    header{
-        label{
-            display: block;
-        }
-        .menu{
-            display: none;
-            position: absolute;
-            width: 70%;
-            margin-left: 70%;
-            flex-direction: column;
-            transition: all 0.5s;
-            li{
-                border-top: grey;
-            }
-        }
-        #btn-menu{
-            &:checked +.menu{
-                margin: 0;
-                display: block;
-            }
-        }
     }
 }

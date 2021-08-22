@@ -9,14 +9,16 @@
     <meta name="description" content="Seccion de contacto, contactate con wertz group o con alguno de los artistas">
     <link rel="stylesheet" href="sass/css/estilo.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/d597fcc936.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Ramabhadra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <input type="checkbox" name="bt-menu" id="btn-menu">
-        <label for="btn-menu"><i class="fas fa-list"></i></label>
-        <nav >
+        <a class="logo" href="index.html">WERTZ</a>
+
+        <a href="#nav" class="menu-abrir"><i class="fas fa-list"></i></a>
+        <nav id="nav">
             <ul class="menu">
                 <li>
                     <a href="index.html">WERTZ</a>
@@ -68,6 +70,9 @@
                 </li>
                 <li>
                     <a href="contacto.html">Contacto</a>
+                </li>
+                <li class="menu-cerrar">
+                    <a href=""><i class="far fa-window-close"></i></a>
                 </li>
             </ul>
         </nav>
