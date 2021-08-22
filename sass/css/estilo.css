@@ -135,6 +135,8 @@ label, input, option {
 header {
   align-content: center;
   margin: auto; }
+  header a {
+    margin-top: 15px; }
   header .logo {
     display: none; }
   header .menu-abrir, header .menu-cerrar {
