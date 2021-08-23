@@ -141,7 +141,7 @@ label, input, option {
       align-content: center;
       margin: auto; }
     .artistas .artistas-bio {
-      padding: 20px 10px; }
+      padding: 10px 5px; }
       .artistas .artistas-bio p {
         margin-top: 20px; }
       .artistas .artistas-bio .redesSociales-artistas {
@@ -150,16 +150,22 @@ label, input, option {
           margin: 10px 20px; }
     .artistas img {
       display: none; }
-  .nuestrosArtistas-img {
-    display: none; }
-    .nuestrosArtistas-img li {
-      display: none; }
-  .nuestrosArtistas-img-480 {
+  .nuestrosArtistas {
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .nuestrosArtistas-img-480 li {
-      margin: 5px; } }
+    flex-direction: column;
+    align-items: center; }
+    .nuestrosArtistas .nuestrosArtistas-img {
+      display: none; }
+      .nuestrosArtistas .nuestrosArtistas-img li {
+        display: none; }
+    .nuestrosArtistas .nuestrosArtistas-img-480 {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .nuestrosArtistas .nuestrosArtistas-img-480 li {
+        margin: 5px; } }
 
 header {
   align-content: center;
@@ -250,6 +256,9 @@ header {
     list-style-type: none;
     align-items: center;
     justify-content: space-evenly; }
+    .footer .footer-nav ul li a i {
+      margin: 5px;
+      font-size: 26px; }
 
 #contactoMain {
   background-image: url(../../img/publico.jpg);
@@ -298,7 +307,10 @@ header {
   width: 100%;
   background-position: center center;
   align-content: center;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .indexMain ul {
     max-width: 900px;
     display: flex;
@@ -313,12 +325,13 @@ header {
     .indexMain ul li {
       font-family: "Aldrich", sans-serif;
       display: flex;
+      flex-wrap: wrap;
       width: 400px;
       height: 200px;
       align-items: center;
       align-content: center;
       justify-content: space-evenly;
-      margin: 20px;
+      margin: 15px;
       border-radius: 5px;
       font-size: 26px;
       background-image: linear-gradient(#333334, black);
@@ -326,24 +339,15 @@ header {
       font-weight: bolder;
       text-transform: uppercase;
       box-sizing: initial; }
-      .indexMain ul li ul {
-        max-width: 750px;
-        position: absolute;
-        display: none;
-        opacity: 100%; }
-        .indexMain ul li ul li {
-          font-family: "Aldrich", sans-serif;
-          display: flex;
-          width: 200px;
-          height: 150px;
-          align-items: center;
-          margin: 3px;
-          align-content: center;
-          font-size: 22px; }
+      .indexMain ul li:hover {
+        transform: scale(1.1, 1.1); }
 
-.indexMain li:hover ul {
-  display: flex;
-  flex-wrap: wrap; }
+@media (max-width: 800px) {
+  .indexMain ul {
+    max-width: 750px; }
+    .indexMain ul li {
+      width: 300px;
+      height: 200px; } }
 
 /*smartphone*/
 @media (max-width: 480px) {
@@ -362,14 +366,7 @@ header {
         height: 90px;
         margin: 5px;
         align-items: center;
-        font-size: 22px; }
-        .indexMain nav li ul {
-          display: none; }
-          .indexMain nav li ul li {
-            display: none; } }
-
-.indexMain li:hover ul {
-  display: flex; }
+        font-size: 22px; } }
 
 .menuEventos, .menuMusica {
   display: flex;
